@@ -1,0 +1,20 @@
+<!-- header部分 -->
+<include src="header.wxml" /> 
+<!-- content内容部分 -->
+<view class="content">
+	<swiper class="content-swiper" current="{{dateCut}}" bindchange="changeTab">
+	<!-- 音乐推荐页面 -->
+		<swiper-item>
+			<include src="info.wxml" />
+		</swiper-item>
+		<!-- 播放器页面 -->
+		<swiper-item>
+			<include src="play.wxml" />
+		</swiper-item>
+		<swiper-item>
+			<include src="playlist.wxml" />
+		</swiper-item>
+	</swiper>
+</view>
+<!-- footPlay底部播放器部分 -->
+<include src="footPlay.wxml" />

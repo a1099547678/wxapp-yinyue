@@ -1,0 +1,16 @@
+<view class="footPlay">
+  <view class="footPlay-items">
+    <image src="/images/test.jpg" class="footPlay-items-image"></image>
+    <text class="footPlay-items-song">{{play.title}}</text>
+    <text class="footPlay-items-writer">{{play.singer}}</text>
+  </view>
+  <view class="footPlay-items">
+  <!-- 下一首按钮 -->
+    <image src="/images/03.png" bindtap="next"></image>
+    <!-- 播放或者暂停 -->
+    <image wx:if="{{state === 'paused'}}" src="/images/02.png" bindtap="play"></image>
+    <image wx:else src="/images/02stop.png" bindtap="pause"></image>
+<!-- 列表按钮 -->
+    <image src="/images/01.png" bindtap="skip"></image>
+  </view>
+</view>

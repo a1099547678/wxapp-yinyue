@@ -1,0 +1,5 @@
+<view class="nav">
+<view class="nav-items {{dateCut==0 ? 'navCut' : ''}}" bindtap="cut" data-cut="0">音乐推荐</view>
+<view class="nav-items {{dateCut==1 ? 'navCut' : ''}}" bindtap="cut" data-cut="1">播放器</view>
+<view class="nav-items {{dateCut==2 ? 'navCut' : ''}}" bindtap="cut" data-cut="2">播放列表</view>
+</view>

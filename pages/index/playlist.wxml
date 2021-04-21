@@ -1,0 +1,9 @@
+<view class="content-playlist">
+ <view wx:for="{{playlist}}" wx:key="id" data-song="{{index}}" bindtap="songList" class="{{songIndex == index ? 'play' : ''}}">
+  <image src="{{item.coverImgUrl}}"></image>
+  <view class="content-playlist-sing">
+  <text style="color:#e3e3e3">{{item.title}}</text>
+  <text style="color:#838383">{{item.singer}}</text>
+  </view>
+ </view>
+</view>

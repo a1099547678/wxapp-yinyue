@@ -1,0 +1,18 @@
+<view class="content-play">
+	<!-- 歌名部分 -->
+	<view class="content-play-intro">
+		<text>{{play.title}}</text>
+		<text>——— {{play.singer}} ———</text>
+	</view>
+	<!-- 动画部分 -->
+	<view class="content-play-cartoon">
+		<image src="{{play.coverImgUrl}}" class="content-play-cartoon-img xz" style="animation-play-state:{{state}}"></image>
+	</view>
+	<!-- 进度条部分 -->
+	<view class="content-play-foot">
+  <text>{{play.currentTime}}</text>
+		<slider class="content-play-foot-bar" block-size="17" value="{{play.percent}}" bindchange="sliderChange">
+		</slider>
+ <text>{{play. duration}}</text>
+	</view>
+</view>
